@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "node ./node_modules/typescript/bin/tsc",
+    "typecheck:watch": "node ./node_modules/typescript/bin/tsc -w"
   },
   "dependencies": {
     "next": "13.4.4",
