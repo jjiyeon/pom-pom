@@ -17,7 +17,7 @@ const Nav = () => {
         </UI.NavButtonWrapper>
         <UI.NavButtonWrapper>
           <Image src={'/ScanQR.svg'} alt="message icon" width={20} height={20} />
-          <Link href={'/Qr'}>Scan QR</Link>
+          <Link href={'/Qr'}>QR</Link>
         </UI.NavButtonWrapper>
         <UI.NavButtonWrapper>
           <Image src={'/Settings.svg'} alt="message icon" width={20} height={20} />

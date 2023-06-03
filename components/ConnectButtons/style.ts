@@ -3,8 +3,20 @@ import styled from '@emotion/styled'
 // export const SettingsList = styled.ul`
 //   padding: 24px 0 0 24px;
 // `
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
+export const ImageBox = styled.div`
+  padding-top: 64px;
+`
 
 export const ConnectButtons = styled.div`
+  padding-top: 64px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
