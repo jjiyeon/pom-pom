@@ -10,6 +10,8 @@ export const globalStyle = css`
     color: inherit;
     word-wrap: break-word;
     word-break: keep-all;
+
+    background: #1e1e1e;
   }
 
   button {
