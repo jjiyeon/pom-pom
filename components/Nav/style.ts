@@ -6,6 +6,7 @@ export const NavContainer = styled.nav`
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   border-radius: 12px 12px 0px 0px;
+  background-color: rgba(255, 255, 255, 0.02);
 
   display: flex;
   align-items: center;
