@@ -8,7 +8,7 @@ const Nav = () => {
       <UI.NavButtonList>
         <UI.NavButtonWrapper>
           {/* <UI.NavButton>Contacts</UI.NavButton> */}
-          <Image src={'/Icon.svg'} alt="message icon" width={20} height={20} />
+          <Image src={'/Contacts.svg'} alt="message icon" width={20} height={20} />
           <Link href={'/Contacts'}>Contacts</Link>
         </UI.NavButtonWrapper>
         <UI.NavButtonWrapper>
@@ -20,7 +20,7 @@ const Nav = () => {
           <Link href={'/ScanQr'}>Scan QR</Link>
         </UI.NavButtonWrapper>
         <UI.NavButtonWrapper>
-          <Image src={'/Message.svg'} alt="message icon" width={20} height={20} />
+          <Image src={'/Settings.svg'} alt="message icon" width={20} height={20} />
           <Link href={'/MyPage'}>Settings</Link>
         </UI.NavButtonWrapper>
       </UI.NavButtonList>
