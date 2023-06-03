@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.home}>
+    <div>
       <Head>
         <title>Pom Pom App</title>
         <meta name="description" content="Pom Pom App<" />
@@ -13,10 +13,15 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.container}>
-          <div className={styles.content}>
-            <h1>dasddas</h1>
+            <div className={styles.header}>
 
-          </div>
+            </div>
+            <div className={styles.content}>
+                content
+            </div>
+            <div className={styles.footer}>
+                footer
+            </div>
         </div>
       </main>
 
