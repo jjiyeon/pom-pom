@@ -1,25 +1,15 @@
 import styled from '@emotion/styled'
+import type { NextPage } from 'next'
+import Nav from '../Nav'
+import ConnectButtons from '../ConnectButtons'
 
-const Main = () => {
+const Main: NextPage = () => {
   return (
-    <StyledContainer>
-      <StyledMainConnect>
-        <StyledConnectButtonWrapper>
-          <StyledConnectWalletButton>MetaMask</StyledConnectWalletButton>
-          <StyledConnectWalletButton>WalletConnect</StyledConnectWalletButton>
-          <StyledConnectWalletButton>WorldIcon</StyledConnectWalletButton>
-        </StyledConnectButtonWrapper>
-      </StyledMainConnect>
-    </StyledContainer>
+    <>
+      <ConnectButtons />
+      <Nav />
+    </>
   )
 }
 
 export default Main
-
-const StyledContainer = styled.div`
-  display: flex;
-  align-items: center;
-`
-const StyledMainConnect = styled.ul``
-const StyledConnectButtonWrapper = styled.li``
-const StyledConnectWalletButton = styled.button``
