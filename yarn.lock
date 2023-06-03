@@ -1105,10 +1105,10 @@
   "resolved" "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz"
   "version" "2.0.3"
 
-ethers@^6.4.1:
-  version "6.4.1"
-  resolved "https://registry.npmjs.org/ethers/-/ethers-6.4.1.tgz"
-  integrity sha512-dBY7rBmoqI7ndCOsaafWEk1Snh2ilSRrLcRghb1FwY51Jze0NKGgn4ZjYAqDcji1lvUzFPEG0/u6w/nH6xJ6pw==
+"ethers@^6.4.1":
+  "integrity" "sha512-dBY7rBmoqI7ndCOsaafWEk1Snh2ilSRrLcRghb1FwY51Jze0NKGgn4ZjYAqDcji1lvUzFPEG0/u6w/nH6xJ6pw=="
+  "resolved" "https://registry.npmjs.org/ethers/-/ethers-6.4.1.tgz"
+  "version" "6.4.1"
   dependencies:
     "@adraffy/ens-normalize" "git+https://github.com/ricmoo/ens-normalize.js.git"
     "@noble/hashes" "1.1.2"
@@ -2111,15 +2111,15 @@ ethers@^6.4.1:
   "resolved" "https://registry.npmjs.org/punycode/-/punycode-2.3.0.tgz"
   "version" "2.3.0"
 
-qr.js@0.0.0:
-  version "0.0.0"
-  resolved "https://registry.npmjs.org/qr.js/-/qr.js-0.0.0.tgz"
-  integrity sha512-c4iYnWb+k2E+vYpRimHqSu575b1/wKl4XFeJGpFmrJQz5I88v9aY2czh7s0w36srfCM1sXgC/xpoJz5dJfq+OQ==
+"qr.js@0.0.0":
+  "integrity" "sha512-c4iYnWb+k2E+vYpRimHqSu575b1/wKl4XFeJGpFmrJQz5I88v9aY2czh7s0w36srfCM1sXgC/xpoJz5dJfq+OQ=="
+  "resolved" "https://registry.npmjs.org/qr.js/-/qr.js-0.0.0.tgz"
+  "version" "0.0.0"
 
-queue-microtask@^1.2.2:
-  version "1.2.3"
-  resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
-  integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
+"queue-microtask@^1.2.2":
+  "integrity" "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A=="
+  "resolved" "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
+  "version" "1.2.3"
 
 "react-dom@^18.2.0", "react-dom@18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
@@ -2134,18 +2134,18 @@ queue-microtask@^1.2.2:
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-react-qr-code@*:
-  version "2.0.11"
-  resolved "https://registry.npmjs.org/react-qr-code/-/react-qr-code-2.0.11.tgz"
-  integrity sha512-P7mvVM5vk9NjGdHMt4Z0KWeeJYwRAtonHTghZT2r+AASinLUUKQ9wfsGH2lPKsT++gps7hXmaiMGRvwTDEL9OA==
+"react-qr-code@^2.0.11":
+  "integrity" "sha512-P7mvVM5vk9NjGdHMt4Z0KWeeJYwRAtonHTghZT2r+AASinLUUKQ9wfsGH2lPKsT++gps7hXmaiMGRvwTDEL9OA=="
+  "resolved" "https://registry.npmjs.org/react-qr-code/-/react-qr-code-2.0.11.tgz"
+  "version" "2.0.11"
   dependencies:
-    prop-types "^15.8.1"
-    qr.js "0.0.0"
+    "prop-types" "^15.8.1"
+    "qr.js" "0.0.0"
 
-"react@^16.x || ^17.x || ^18.x", react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16.8.0, react@18.2.0:
-  version "18.2.0"
-  resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+"react@^16.x || ^17.x || ^18.x", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.8.0", "react@18.2.0":
+  "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
+  "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
+  "version" "18.2.0"
   dependencies:
     "loose-envify" "^1.1.0"
 
