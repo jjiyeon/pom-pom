@@ -5,7 +5,7 @@ interface QRInit {
   code: string
   setCode: (param: string) => void
 }
-export const useGameInitStore = create<QRInit>()(
+export const useQRStore = create<QRInit>()(
   devtools((set, get) => ({
     code: '',
     setCode: (param) => {
