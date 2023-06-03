@@ -13,7 +13,6 @@ const PageQR: NextPage = () => {
         <QR />
         <UI.ShareButton>Share your POM token</UI.ShareButton>
       </UI.Container>
-      <Nav />
     </>
   )
 }

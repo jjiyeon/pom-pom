@@ -14,7 +14,6 @@ const MyPage: NextPage = () => {
         <UI.SettingsListItem>Edit My POM Profile </UI.SettingsListItem>
         <UI.SettingsListItem>Logout</UI.SettingsListItem>
       </UI.SettingsList>
-      <Nav />
     </>
   )
 }

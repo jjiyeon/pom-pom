@@ -2,14 +2,23 @@ import { Global } from '@emotion/react'
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { globalStyle } from '../styles/Global'
+import Nav from '../components/Nav'
+import styled from '@emotion/styled'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Global styles={globalStyle} />
-      <Component {...pageProps} />
+      <Container>
+        <Component {...pageProps} />
+      </Container>
+      <Nav />
     </>
   )
 }
 
+const Container = styled.div`
+  position: relative;
+  padding-bottom: 80px;
+`
 export default MyApp
