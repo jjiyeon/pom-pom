@@ -36,7 +36,9 @@ export const SortIcon = styled.div`
   left: 18px;
 `
 
-export const ContactsUsers = styled.div``
+export const ContactsUsers = styled.div`
+  padding-top: 20px;
+`
 export const UserList = styled.ul`
   display: flex;
   flex-direction: column;
