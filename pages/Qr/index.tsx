@@ -8,8 +8,11 @@ import * as UI from './style'
 const PageQR: NextPage = () => {
   return (
     <>
-      <UI.Title>My QR</UI.Title>
-      <QR />
+      <UI.Container>
+        <UI.Title>My QR</UI.Title>
+        <QR />
+        <UI.ShareButton>Share your POM token</UI.ShareButton>
+      </UI.Container>
       <Nav />
     </>
   )
