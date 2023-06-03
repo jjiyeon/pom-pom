@@ -14,7 +14,7 @@ const Profile: NextPage = () => {
       <UI.Container>
         <UI.Title> POM Profile</UI.Title>
         <UI.ImageBox>
-          <Image src={'/userpic.png'} alt="message icon" width={250} height={250} />
+          <Image src={'/userpic.png'} alt="message icon" width={150} height={150} />
           <span>{userName}</span>
         </UI.ImageBox>
         <UI.DataBox>

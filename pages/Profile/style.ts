@@ -30,7 +30,7 @@ export const ImageBox = styled.div`
 
   img {
     border-radius: 50%;
-    height: 250px;
+    height: 150px;
   }
 
   span {
@@ -48,7 +48,7 @@ export const ImageBox = styled.div`
     color: #ffffff;
   }
 
-  padding-bottom: 72px;
+  padding-bottom: 36px;
 `
 
 export const DataBox = styled.div`
@@ -58,15 +58,15 @@ export const DataBox = styled.div`
   align-items: flex-start;
   justify-content: center;
 
-  padding-bottom: 64px;
+  padding-bottom: 16px;
 `
 
 export const DataField = styled.div`
   display: inline-flex;
   align-items: center;
-  background-color: black;
+  background-color: #1e1e1e;
   border-radius: 4px;
-  padding: 16px;
+  padding: 8px;
 
   overflow: hidden;
 `
@@ -78,7 +78,7 @@ export const DataFieldLeft = styled.span`
   z-index: 1;
 
   color: rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.04);
+  background: #333;
 `
 export const DataFieldRight = styled.span`
   padding: 4px 8px;
@@ -86,7 +86,7 @@ export const DataFieldRight = styled.span`
   border: 1px solid rgba(255, 255, 255, 0.04);
 
   color: rgba(255, 255, 255, 0.72);
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 255, 255, 0.01);
+  background: #1e1e1e;
 `
 
 export const ConnectButton = styled.button`
@@ -97,8 +97,8 @@ export const ConnectButton = styled.button`
   padding: 12px 16px;
   gap: 10px;
 
-  width: 342px;
-  height: 48px;
+  width: 60%;
+  height: 16px;
 
   background: linear-gradient(157.2deg, #ffffff 34.76%, rgba(116, 116, 116, 0) 458.81%);
   backdrop-filter: blur(6px);
