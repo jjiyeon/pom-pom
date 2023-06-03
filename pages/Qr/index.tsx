@@ -4,6 +4,7 @@ import Nav from '../../components/Nav'
 import QR from '../../components/QR'
 
 import * as UI from './style'
+import Link from 'next/link'
 
 const PageQR: NextPage = () => {
   return (
@@ -11,7 +12,9 @@ const PageQR: NextPage = () => {
       <UI.Container>
         <UI.Title>My QR</UI.Title>
         <QR />
-        <UI.ShareButton>Share your POM token</UI.ShareButton>
+        <UI.ShareButton>
+          <Link href={'/Profile/vlad'}>Share your POM token</Link>
+        </UI.ShareButton>
       </UI.Container>
     </>
   )
