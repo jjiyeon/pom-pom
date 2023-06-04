@@ -13,6 +13,15 @@ export const NavContainer = styled.nav`
   align-items: center;
   justify-content: space-evenly;
 
+  a {
+    display: flex;
+
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
   * {
     background: #333;
   }

@@ -1,5 +1,31 @@
+import Link from 'next/link'
 import * as UI from './style'
 import Image from 'next/image'
+
+const dummyFirends = [
+  {
+    name: 'Shawn',
+    image: '/contacts/1.png',
+  },
+  {
+    name: 'Jordan',
+    image: '/contacts/2.png',
+  },
+  ,
+  {
+    name: 'Vlad',
+    image: '/contacts/3.png',
+  },
+  ,
+  {
+    name: 'Summer',
+    image: '/contacts/4.png',
+  },
+  {
+    name: 'Maxi',
+    image: '/contacts/5.png',
+  },
+]
 
 const Contacts = () => {
   return (
@@ -22,13 +48,15 @@ const Contacts = () => {
 
         <UI.ContactsUsers>
           <UI.UserList>
-            {Array.from({ length: 10 }).map((item, idx) => {
+            {dummyFirends.map((item, idx) => {
               return (
                 <UI.User key={idx}>
-                  <UI.UserImage>
-                    <Image src={`/contacts/2.png`} width={42} height={42} alt="dummy user" />
-                  </UI.UserImage>
-                  <UI.Name>Summer {idx}</UI.Name>
+                  <Link href="/Chat">
+                    <UI.UserImage>
+                      <Image src={`${item?.image}`} width={42} height={42} alt="dummy user" />
+                    </UI.UserImage>
+                    <UI.Name>{item?.name}</UI.Name>
+                  </Link>
                 </UI.User>
               )
             })}

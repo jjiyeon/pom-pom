@@ -49,6 +49,12 @@ export const User = styled.li`
   align-items: center;
   padding: 0 16px;
   gap: 16px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 `
 export const UserImage = styled.div`
   display: inline-block;

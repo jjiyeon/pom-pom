@@ -8,20 +8,28 @@ const Nav = () => {
       <UI.NavButtonList>
         <UI.NavButtonWrapper>
           {/* <UI.NavButton>Contacts</UI.NavButton> */}
-          <Image src={'/Contacts.svg'} alt="message icon" width={20} height={20} />
-          <Link href={'/Contacts'}>Contacts</Link>
+          <Link href={'/Contacts'}>
+            <Image src={'/Contacts.svg'} alt="message icon" width={20} height={20} />
+            <p>Contacts</p>
+          </Link>
         </UI.NavButtonWrapper>
         <UI.NavButtonWrapper>
-          <Image src={'/Message.svg'} alt="message icon" width={20} height={20} />
-          <Link href={'/Chat'}>Chat</Link>
+          <Link href={'/Chat'}>
+            <Image src={'/Message.svg'} alt="message icon" width={20} height={20} />
+            <p>Chat</p>
+          </Link>
         </UI.NavButtonWrapper>
         <UI.NavButtonWrapper>
-          <Image src={'/ScanQR.svg'} alt="message icon" width={20} height={20} />
-          <Link href={'/Qr'}>QR</Link>
+          <Link href={'/Qr'}>
+            <Image src={'/ScanQR.svg'} alt="message icon" width={20} height={20} />
+            <p>QR</p>
+          </Link>
         </UI.NavButtonWrapper>
         <UI.NavButtonWrapper>
-          <Image src={'/Settings.svg'} alt="message icon" width={20} height={20} />
-          <Link href={'/MyPage'}>Settings</Link>
+          <Link href={'/MyPage'}>
+            <Image src={'/Settings.svg'} alt="message icon" width={20} height={20} />
+            <p>Settings</p>
+          </Link>
         </UI.NavButtonWrapper>
       </UI.NavButtonList>
     </UI.NavContainer>

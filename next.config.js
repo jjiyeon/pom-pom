@@ -5,6 +5,9 @@ const nextConfig = {
   compiler: {
     emotion: true,
   },
+  compilerOptions: {
+    module: 'NodeNext',
+  },
 
   webpack5: true,
   webpack: (config) => {
