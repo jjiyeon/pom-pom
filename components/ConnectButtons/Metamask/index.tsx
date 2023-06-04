@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { ethers } from 'ethers'
-
+import { useRouter } from 'next/navigation'
 import * as UI from '../style'
 import Image from 'next/image'
 
 const Metamask = () => {
   const [metaMaskAddress, setMetaMaskAddress] = useState('')
-
+  const router = useRouter()
   // Requests access to the user's META MASK WALLET
   // https://metamask.io
   async function requestAccount() {
@@ -20,6 +20,7 @@ const Metamask = () => {
           method: 'eth_requestAccounts',
         })
         setMetaMaskAddress(accounts[0])
+        router.push('/Profile')
         console.log(`Metamask address: ${accounts[0]}`)
       } catch (error) {
         console.log(`Error: ${error}`)
