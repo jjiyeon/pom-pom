@@ -120,4 +120,6 @@ export const ConnectButton = styled.button`
 `
 export const Message = styled.span`
   width: 250px;
+  color: #fff;
+  padding: 10px;
 `

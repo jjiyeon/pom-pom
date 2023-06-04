@@ -15,7 +15,7 @@ const Profile = () => {
       <UI.Container>
         <UI.Title> My Profile</UI.Title>
         <UI.ImageBox>
-          <Image src={'/profile.jpg'} alt="message icon" width={150} height={150} />
+          <Image src={'/userpic.png'} alt="message icon" width={150} height={150} />
           <span>My profile</span>
         </UI.ImageBox>
         <UI.DataBox>

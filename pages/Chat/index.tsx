@@ -15,19 +15,19 @@ const PageChat = () => {
         <StyledChat>
           <STyledUserText>Hi~~~</STyledUserText>
           <StyledUserImage>
-            <Image src={`/contacts/1.png`} width={42} height={42} alt="dummy user" />
+            <Image src={`/contacts/2.png`} width={42} height={42} alt="dummy user" />
           </StyledUserImage>
         </StyledChat>
         <StyledChat>
           <StyledUserImage>
             <Image src={`/contacts/1.png`} width={42} height={42} alt="dummy user" />
           </StyledUserImage>
-          <STyledUserText>Hi~~~</STyledUserText>
+          <STyledUserText>Nice to meet you</STyledUserText>
         </StyledChat>
         <StyledChat>
-          <STyledUserText>Hi~~~</STyledUserText>
+          <STyledUserText>you too~~~</STyledUserText>
           <StyledUserImage>
-            <Image src={`/contacts/1.png`} width={42} height={42} alt="dummy user" />
+            <Image src={`/contacts/2.png`} width={42} height={42} alt="dummy user" />
           </StyledUserImage>
         </StyledChat>
       </StyledChatList>
