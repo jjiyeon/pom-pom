@@ -23,23 +23,27 @@ const abi = await getAbi()
 
 const my_contract = new ethers.Contract(UPDATED_CONTRACT_ADDRESS, abi, signer)
 
+// mints POM to the chosen address
 export async function mintToken(userAddress, _id) {
-  let id = 1000 // _id
+  let id = 0 // _id
   const mint_tx = await my_contract.mint(userAddress, id, 1, '0x0102') // second argumnent is id
   return mint_tx
 }
 
+// changes URI for tokens' metadata folder
 export async function setURI(userAddress) {
   const newURI = await my_contract.setURI('ipfs://Qmdtyqjx5ha9dBda6ZE5dc2N4vB8oAZYrLhGQj5jAah2RF/')
   //console.log(uri);
   return newURI.hash
 }
 
+// returns the number of POMs minted for each id (friends of single user)
 export async function totalSupply(id) {
   const supply = await my_contract.totalSupply(id)
   return supply
 }
 
+// returns the number of existing POMs (counter of Users' profiles)
 export async function tokenCounter() {
   const tokenCounter = await my_contract.tokenCounter()
   return tokenCounter
