@@ -6,10 +6,13 @@ const nextConfig = {
   compiler: {
     emotion: true,
   },
-  resolve: {
-    fallback: {
-      fs: false,
-    },
+
+  webpack5: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false }
+    config.experiments = { ...config.experiments, topLevelAwait: true }
+
+    return config
   },
 }
 

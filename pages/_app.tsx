@@ -1,6 +1,6 @@
 import { Global } from '@emotion/react'
 import '../styles/globals.scss'
-import type { AppProps } from 'next/app'
+import { AppProps } from 'next/app'
 import { globalStyle } from '../styles/Global'
 import Nav from '../components/Nav'
 import styled from '@emotion/styled'

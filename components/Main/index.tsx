@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import type { NextPage } from 'next'
 import Nav from '../Nav'
 import ConnectButtons from '../ConnectButtons'
-import { mintToken } from '../../libs/Active_SCMethods'
+import { mintToken } from '../../libs/Active_SCMethods.js'
 
 const Main: NextPage = () => {
   const test = async () => {
