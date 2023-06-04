@@ -5,17 +5,18 @@ const Header = () => {
   return (
     <StyledLogoContainer>
       <StyledLogo>
-        <Image src={'/icon-logo.svg'} alt="pom logo icon" width={60} height={60} />
+        <Image src={'/pomlogo.png'} alt="pom logo icon" width={60} height={60} />
       </StyledLogo>
-      <StyledPom>
-        <Image src={'/icon-pom.svg'} alt="pom logo icon" width={65} height={46} />
-      </StyledPom>
     </StyledLogoContainer>
   )
 }
 
-const StyledLogoContainer = styled.div``
+const StyledLogoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+`
 const StyledLogo = styled.h1``
-const StyledPom = styled.div``
 
 export default Header

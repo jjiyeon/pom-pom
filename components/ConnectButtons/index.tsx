@@ -17,7 +17,6 @@ const ConnectButtons = () => {
         </UI.ImageBox>
         <UI.ConnectButtons>
           <Metamask />
-          <WorldCoin />
           <WalletConnect />
         </UI.ConnectButtons>
       </UI.Container>

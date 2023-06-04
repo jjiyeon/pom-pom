@@ -1,7 +1,7 @@
-import { ethers } from 'ethers'
-import { config as loadEnv } from 'dotenv'
-import { promises } from 'fs'
-const fsPromises = promises
+const { ethers } = require('ethers')
+const { config: loadEnv } = require('dotenv')
+const { promises: fsPromises } = require('fs')
+const { readFile } = fsPromises
 loadEnv()
 
 const PRIVATE_KEY = process.env.WALLET_PRIVATE_KEY

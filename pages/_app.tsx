@@ -10,7 +10,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Global styles={globalStyle} />
-      {/* <Header /> */}
+      <Header />
       <Container>
         <Component {...pageProps} />
       </Container>
