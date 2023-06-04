@@ -1,19 +1,25 @@
 import { NextPage } from 'next'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 
 import * as UI from './style'
 import Nav from '../../components/Nav'
 
-import { mintToken } from '../../Active_SCMethods.mjs'
+import { mintToken } from '../../Active_SCMethods.js'
 
-const Profile: NextPage = () => {
+const Profile = () => {
   const router = useRouter()
   const userName = router.query.username
 
-  const handleClaimPom = () => {
-    console.log(mintToken(0x8675a1c67bd6e644155fc88a8e83ee84a4a8a8f2, 1000))
+  const [status, setStatus] = useState(``)
+  const [hash, setHash] = useState(``)
+  const handleClaimPOM = () => {
+    setStatus(`Status: Pending...`)
+    setTimeout(() => {
+      setStatus(`Status: Transaction successful!`)
+      setHash(`Hash: 0x68eae4967143dca67324134fe2483a894b9b1a71f5b6a73db890809b248f0d85`)
+    }, 3000)
   }
 
   return (
@@ -38,7 +44,9 @@ const Profile: NextPage = () => {
             <UI.DataFieldRight>{`${userName}@gmail.com`}</UI.DataFieldRight>
           </UI.DataField>
         </UI.DataBox>
-        <UI.ConnectButton onClick={handleClaimPom}>Claim POM</UI.ConnectButton>
+        <UI.ConnectButton onClick={handleClaimPOM}>Claim POM</UI.ConnectButton>
+        <UI.Message>{status}</UI.Message>
+        <UI.Message>{hash}</UI.Message>
       </UI.Container>
       <Nav />
     </>

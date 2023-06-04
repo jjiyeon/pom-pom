@@ -118,3 +118,6 @@ export const ConnectButton = styled.button`
 
   border-radius: 8px;
 `
+export const Message = styled.span`
+  width: 250px;
+`
