@@ -6,7 +6,7 @@ import Image from 'next/image'
 import * as UI from './style'
 import Nav from '../../components/Nav'
 
-import { mintToken } from '../../ABI/Active_SCMethods'
+import { mintToken } from '../../Active_SCMethods'
 
 const Profile: NextPage = () => {
   const router = useRouter()

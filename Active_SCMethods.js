@@ -1,8 +1,7 @@
-// set "type": "module" in package.json
-import { ethers } from 'ethers'
-import { config as loadEnv } from 'dotenv'
-import { promises } from 'fs'
-const fsPromises = promises
+const { ethers } = require('ethers')
+const { config: loadEnv } = require('dotenv')
+const { promises: fsPromises } = require('fs')
+const { readFile } = fsPromises
 loadEnv()
 
 const PRIVATE_KEY = process.env.WALLET_PRIVATE_KEY
@@ -25,7 +24,7 @@ const abi = await getAbi()
 const my_contract = new ethers.Contract(UPDATED_CONTRACT_ADDRESS, abi, signer)
 
 export async function mintToken(userAddress, _id) {
-  let id = 0 // _id
+  let id = 1000 // _id
   const mint_tx = await my_contract.mint(userAddress, id, 1, '0x0102') // second argumnent is id
   return mint_tx
 }
