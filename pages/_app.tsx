@@ -5,7 +5,7 @@ import { globalStyle } from '../styles/Global'
 import Nav from '../components/Nav'
 import styled from '@emotion/styled'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Global styles={globalStyle} />
