@@ -6,9 +6,16 @@ import Image from 'next/image'
 import * as UI from './style'
 import Nav from '../../components/Nav'
 
+import { mintToken } from '../../ABI/Active_SCMethods'
+
 const Profile: NextPage = () => {
   const router = useRouter()
   const userName = router.query.username
+
+  const handleClaimPom = () => {
+    console.log(mintToken(0x8675a1c67bd6e644155fc88a8e83ee84a4a8a8f2, 1000))
+  }
+
   return (
     <>
       <UI.Container>
@@ -31,7 +38,7 @@ const Profile: NextPage = () => {
             <UI.DataFieldRight>{`${userName}@gmail.com`}</UI.DataFieldRight>
           </UI.DataField>
         </UI.DataBox>
-        <UI.ConnectButton>Claim POM</UI.ConnectButton>
+        <UI.ConnectButton onClick={handleClaimPom}>Claim POM</UI.ConnectButton>
       </UI.Container>
       <Nav />
     </>
